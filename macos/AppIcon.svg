@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="background" x1="160" y1="128" x2="864" y2="896" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7690ff"/>
+      <stop offset="0.52" stop-color="#4f6be9"/>
+      <stop offset="1" stop-color="#2f49bd"/>
+    </linearGradient>
+    <linearGradient id="door" x1="512" y1="242" x2="512" y2="782" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8edff"/>
+    </linearGradient>
+    <filter id="shadow" x="160" y="170" width="704" height="700" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="30" stdDeviation="34" flood-color="#152870" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+  <rect x="72" y="72" width="880" height="880" rx="214" fill="url(#background)"/>
+  <path d="M180 254c83-110 205-166 366-166 137 0 250 42 338 125" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="26" stroke-linecap="round"/>
+  <g filter="url(#shadow)">
+    <rect x="232" y="232" width="560" height="560" rx="128" fill="url(#door)"/>
+  </g>
+  <path d="M352 372h320M352 652h320" fill="none" stroke="#93a5ef" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="512" cy="512" r="92" fill="#3e5bd3"/>
+  <circle cx="512" cy="512" r="42" fill="#f6f8ff"/>
+  <rect x="492" y="532" width="40" height="82" rx="20" fill="#f6f8ff"/>
+  <circle cx="690" cy="338" r="26" fill="#cdd6ff"/>
+</svg>

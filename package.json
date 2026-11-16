@@ -1,0 +1,13 @@
+{
+  "name": "local-secret-vault",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "setup:helpers": "node bin/build-helpers.mjs",
+    "build:app": "node bin/build-macos-app.mjs",
+    "check:public": "node bin/check-public-source.mjs",
+    "start": "node app/server.mjs --open",
+    "check": "node --check app/server.mjs && node --check app/public/app.js && node --check bin/provision-project-env.mjs && node --check bin/list-source-vault-names.mjs && node --check bin/build-helpers.mjs && node --test app/*.test.mjs bin/*.test.mjs swift/*.test.mjs && plutil -lint macos/Info.plist >/dev/null && swiftc -typecheck swift/project-keychain.swift && swiftc -typecheck swift/vault-admin.swift && swiftc -parse-as-library -typecheck macos/SecretVaultApp.swift -framework AppKit -framework WebKit"
+  }
+}

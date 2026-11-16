@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+!.env.tpl
+.envrc
+!.envrc
+*.env
+!.env.example
+!.env.tpl
+.DS_Store
+
+# Private keys, certificates with private material, and exported credentials.
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+secrets*.yaml
+secrets*.yml
+
+# Local material that must never enter the public source tree.
+/private/
+/didiride/
+/.superstack/
+/bin/project-keychain
+/bin/vault-admin
+/bin/.helper-build-*/
+/bin/migrate-global-vault-keychain.mjs
+/bin/run-project-keychain.mjs
+/bin/provision-project-keychain.mjs
